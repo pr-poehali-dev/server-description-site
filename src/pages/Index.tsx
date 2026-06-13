@@ -260,7 +260,7 @@ const Index = () => {
                 ].map((item) => (
                   <div key={item.text} className="flex items-start gap-3">
                     <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
-                    <span className="text-sm leading-relaxed" style={{ color: "#8a7a6a" }}>{item.text}</span>
+                    <span className="leading-relaxed text-lg" style={{ color: "#8a7a6a" }}>{item.text}</span>
                   </div>
                 ))}
               </div>

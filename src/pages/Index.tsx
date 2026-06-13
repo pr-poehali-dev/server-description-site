@@ -219,10 +219,10 @@ const Index = () => {
               <h3 className="font-oswald text-2xl font-bold text-white mb-4">Что вас ждёт?</h3>
               <div className="flex flex-col gap-3">
                 {[
-                  { icon: "🏢", text: "Создать и развивать бизнес-империю" },
-                  { icon: "💰", text: "Получать зарплату и управлять финансами" },
-                  { icon: "🤝", text: "Взаимодействовать с игроками и администрацией" },
-                  { icon: "🎉", text: "Участвовать в регулярных ивентах и многое другое" },
+                  { icon: "🏢", text: "Воплощение и развитие своей бизнес-империи" },
+                  { icon: "💰", text: "Регулярные выплаты зарплаты" },
+                  { icon: "🤝", text: "Взаимодействие с игроками и администрацией" },
+                  { icon: "🎉", text: "Участие в регулярных ивентах и многое другое" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-start gap-3">
                     <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>

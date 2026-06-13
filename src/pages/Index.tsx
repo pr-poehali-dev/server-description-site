@@ -14,7 +14,7 @@ const NAV_LINKS = [
 
 const TEAM = [
   { name: "Кирилл", role: "Создатель сервера", emoji: "👑", vk: "https://vk.com/id1094786468" },
-  { name: "Артём", role: "Заместитель создателя", emoji: "🛡️", vk: "https://vk.com/id1094786468" },
+  { name: "Артём", role: "Заместитель создателя", emoji: "🛡️", vk: "https://vk.com/id1118347121" },
   { name: "Юрий", role: "Создатель сайта", emoji: "💻", vk: "https://vk.com/hotjuk20110712" },
 ];
 

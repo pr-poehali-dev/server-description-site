@@ -203,7 +203,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#about"
-              className="font-pixel tracking-wider transition-all duration-200 text-xs py-4 px-[22px] my-[1px] mx-0.5 rounded-lg font-light"
+              className="font-politburo tracking-wider transition-all duration-200 text-xs rounded-lg font-light px-[18px] my-[3px] mx-0 py-[19px]"
               style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
               onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 30px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}

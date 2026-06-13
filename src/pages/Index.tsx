@@ -356,7 +356,7 @@ const Index = () => {
                   Онлайн
                 </div>
               </div>
-              <p className="text-sm mb-5" style={{ color: "#6a5a4a" }}>Bedrock Edition — играй с телефона или планшета</p>
+              <p className="text-sm mb-5" style={{ color: "#6a5a4a" }}>Bedrock Edition — Играй на телефоне, компьютере или планшете.</p>
               <a
                 href={VK_LINK}
                 target="_blank"

@@ -198,9 +198,7 @@ const Index = () => {
             ВЕСТМАРК
           </h1>
 
-          <p className="max-w-xl mx-auto mb-10 leading-relaxed text-2xl font-medium" style={{ color: "#8a7a6a" }}>
-            Давно мечтали о сервере где будет РП и ванила? Тогда тебе к нам!
-          </p>
+          <p className="max-w-xl mx-auto mb-10 leading-relaxed text-2xl font-medium" style={{ color: "#8a7a6a" }}></p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

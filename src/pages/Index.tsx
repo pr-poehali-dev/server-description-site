@@ -333,7 +333,7 @@ const Index = () => {
                 <div className="text-4xl mb-4">{item.emoji}</div>
                 <div className="font-minecraft text-xl font-bold text-white mb-2">{item.name}</div>
                 <div className="text-sm mb-4" style={{ color: "#6a5a4a" }}>{item.desc}</div>
-                <div className="font-minecraft text-3xl font-bold my-1 px-0 mx-1.5 py-[15px]" style={{ color: "#c9a84c" }}>{item.price}</div>
+                <div className="font-minecraft text-3xl font-bold mx-1.5 my-0 px-0 py-0" style={{ color: "#c9a84c" }}>{item.price}</div>
               </div>
             ))}
           </div>

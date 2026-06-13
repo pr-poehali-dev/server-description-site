@@ -407,7 +407,7 @@ const Index = () => {
                   </div>
                   {serverStatus.version && (
                     <div
-                      className="px-3 py-1.5 rounded-lg text-xs mx-0.5 my-[1px]"
+                      className="text-xs rounded-xl py-[5px] my-0 px-[15px] mx-[3px]"
                       style={{ background: "rgba(255,255,255,0.03)", color: "#5a4a3a" }}
                     >
                       v{serverStatus.version}

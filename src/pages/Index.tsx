@@ -13,9 +13,9 @@ const NAV_LINKS = [
 ];
 
 const TEAM = [
-  { name: "Кирилл", role: "Создатель сервера", emoji: "👑" },
-  { name: "Артём", role: "Заместитель создателя", emoji: "🛡️" },
-  { name: "Юрий", role: "Создатель сайта", emoji: "💻" },
+  { name: "Кирилл", role: "Создатель сервера", emoji: "👑", vk: "https://vk.com/id1094786468" },
+  { name: "Артём", role: "Заместитель создателя", emoji: "🛡️", vk: "https://vk.com/id1094786468" },
+  { name: "Юрий", role: "Создатель сайта", emoji: "💻", vk: "https://vk.com/hotjuk20110712" },
 ];
 
 const SHOP_ITEMS = [
@@ -256,10 +256,13 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {TEAM.map((m) => (
-              <div
+              <a
                 key={m.name}
-                className="rounded-2xl p-6 text-center transition-all duration-300"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
+                href={m.vk}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-2xl p-6 text-center transition-all duration-300 block"
+                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)", textDecoration: "none" }}
                 onMouseEnter={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.3)"; e.currentTarget.style.background = "rgba(201,168,76,0.05)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)"; e.currentTarget.style.background = "rgba(255,255,255,0.03)"; e.currentTarget.style.transform = "none"; }}
               >
@@ -267,8 +270,9 @@ const Index = () => {
                   {m.emoji}
                 </div>
                 <div className="font-oswald font-bold text-white text-xl mb-1">{m.name}</div>
-                <div className="text-xs" style={{ color: "#c9a84c" }}>{m.role}</div>
-              </div>
+                <div className="text-xs mb-2" style={{ color: "#c9a84c" }}>{m.role}</div>
+                <div className="text-xs" style={{ color: "#5a4a3a" }}>ВКонтакте →</div>
+              </a>
             ))}
           </div>
         </div>

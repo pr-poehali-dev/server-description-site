@@ -283,7 +283,7 @@ const Index = () => {
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ЛЮДИ —</div>
             <h2 className="font-pixel text-white" style={{ fontSize: "clamp(0.9rem, 2.5vw, 1.6rem)" }}>НАШ КОЛЛЕКТИВ</h2>
-            <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Те, кто создают и поддерживают сервер</p>
+            <p className="mt-3 text-base font-medium" style={{ color: "#5a4a3a" }}>Те, кто создают и поддерживают сервер</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">

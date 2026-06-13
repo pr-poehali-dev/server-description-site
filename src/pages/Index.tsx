@@ -188,9 +188,7 @@ const Index = () => {
               : "⚔️ СЕРВЕР ОФФЛАЙН"}
           </div>
 
-          <h1 className="font-pixel leading-tight mb-4 text-white" style={{ fontSize: "clamp(1.4rem, 5vw, 3.5rem)", letterSpacing: "0.03em" }}>
-            РЕСПУБЛИКА
-          </h1>
+          <h1 className="font-pixel leading-tight mb-4 text-white" style={{ fontSize: "clamp(1.4rem, 5vw, 3.5rem)", letterSpacing: "0.03em" }}>РЕСПУБЛИКА</h1>
           <h1
             className="font-pixel leading-tight mb-10"
             style={{ fontSize: "clamp(1.4rem, 5vw, 3.5rem)", letterSpacing: "0.03em", color: "#c9a84c", textShadow: "0 0 20px rgba(201,168,76,0.5), 4px 4px 0px rgba(100,60,0,0.8)" }}

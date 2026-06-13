@@ -269,9 +269,9 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center text-3xl" style={{ background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.2)" }}>
                   {m.emoji}
                 </div>
-                <div className="font-minecraft font-bold text-white text-xl mb-1">{m.name}</div>
-                <div className="text-xs mb-2" style={{ color: "#c9a84c" }}>{m.role}</div>
-                <div className="text-xs" style={{ color: "#5a4a3a" }}>ВКонтакте →</div>
+                <div className="font-pixel text-white mb-2" style={{ fontSize: "0.65rem" }}>{m.name}</div>
+                <div className="font-pixel mb-2" style={{ fontSize: "0.5rem", color: "#c9a84c" }}>{m.role}</div>
+                <div className="font-pixel" style={{ fontSize: "0.45rem", color: "#5a4a3a" }}>ВКонтакте →</div>
               </a>
             ))}
           </div>

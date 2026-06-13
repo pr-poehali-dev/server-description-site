@@ -73,6 +73,7 @@ export default {
 				oswald: ['Oswald', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 				minecraft: ['VT323', 'monospace'],
+				pixel: ['"Press Start 2P"', 'monospace'],
 			},
 			keyframes: {
 				'accordion-down': {

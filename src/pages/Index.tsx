@@ -241,9 +241,7 @@ const Index = () => {
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>
               <div className="text-3xl mb-4">🏰</div>
               <h3 className="font-pixel text-white mb-4" style={{ fontSize: "clamp(0.7rem, 2vw, 1rem)" }}>Кто мы?</h3>
-              <p className="leading-relaxed" style={{ color: "#8a7a6a" }}>
-                Наш сервер — это новый проект, в котором находятся элементы РП и выживания. Мы создаём уникальное пространство, где каждый игрок может найти своё место и роль.
-              </p>
+              <p className="leading-relaxed" style={{ color: "#8a7a6a" }}>Наш сервер — это свежий проект, сочетающий элементы ролевых игр и выживания. Мы строим уникальное пространство, где каждый сможет найти своё место и реализовать свою роль.</p>
             </div>
 
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>

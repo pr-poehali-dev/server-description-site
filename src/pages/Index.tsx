@@ -397,7 +397,7 @@ const Index = () => {
               {serverStatus?.online && (
                 <div className="flex items-center gap-2 mb-4">
                   <div
-                    className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm"
+                    className="flex items-center gap-2 text-sm py-1.5 my-[1px] px-[17px] mx-0 rounded-lg"
                     style={{ background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.15)" }}
                   >
                     <Icon name="Users" size={14} style={{ color: "#c9a84c" }} />
@@ -407,7 +407,7 @@ const Index = () => {
                   </div>
                   {serverStatus.version && (
                     <div
-                      className="px-3 py-1.5 rounded-lg text-xs"
+                      className="px-3 py-1.5 rounded-lg text-xs mx-0.5 my-[1px]"
                       style={{ background: "rgba(255,255,255,0.03)", color: "#5a4a3a" }}
                     >
                       v{serverStatus.version}

@@ -202,13 +202,13 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ОПИСАНИЕ —</div>
-            <h2 className="font-minecraft text-5xl md:text-6xl text-white">О СЕРВЕРЕ</h2>
+            <h2 className="font-pixel text-white" style={{ fontSize: "clamp(1rem, 3vw, 1.8rem)" }}>О СЕРВЕРЕ</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>
               <div className="text-3xl mb-4">🏰</div>
-              <h3 className="font-minecraft text-2xl font-bold text-white mb-4">Кто мы?</h3>
+              <h3 className="font-pixel text-white mb-4" style={{ fontSize: "clamp(0.7rem, 2vw, 1rem)" }}>Кто мы?</h3>
               <p className="leading-relaxed" style={{ color: "#8a7a6a" }}>
                 Наш сервер — это новый проект, в котором находятся элементы РП и выживания. Мы создаём уникальное пространство, где каждый игрок может найти своё место и роль.
               </p>
@@ -216,7 +216,7 @@ const Index = () => {
 
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>
               <div className="text-3xl mb-4">⚡</div>
-              <h3 className="font-minecraft text-2xl font-bold text-white mb-4">Что вас ждёт?</h3>
+              <h3 className="font-pixel text-white mb-4" style={{ fontSize: "clamp(0.7rem, 2vw, 1rem)" }}>Что вас ждёт?</h3>
               <div className="flex flex-col gap-3">
                 {[
                   { icon: "🏢", text: "Воплощение и развитие своей бизнес-империи" },
@@ -250,7 +250,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ЛЮДИ —</div>
-            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">НАШ КОЛЛЕКТИВ</h2>
+            <h2 className="font-pixel text-white" style={{ fontSize: "clamp(0.9rem, 2.5vw, 1.6rem)" }}>НАШ КОЛЛЕКТИВ</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Те, кто создают и поддерживают сервер</p>
           </div>
 
@@ -287,7 +287,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ДОНАТ —</div>
-            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">МАГАЗИН</h2>
+            <h2 className="font-pixel text-white" style={{ fontSize: "clamp(0.9rem, 2.5vw, 1.6rem)" }}>МАГАЗИН</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Поддержи сервер и получи привилегии</p>
           </div>
 
@@ -338,7 +338,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— PLAY —</div>
-            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">НАШИ СЕРВЕРА</h2>
+            <h2 className="font-pixel text-white" style={{ fontSize: "clamp(0.9rem, 2.5vw, 1.6rem)" }}>НАШИ СЕРВЕРА</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Выбери платформу и присоединяйся</p>
           </div>
 

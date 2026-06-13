@@ -302,7 +302,7 @@ const Index = () => {
                   {m.emoji}
                 </div>
                 <div className="font-pixel text-white mb-2" style={{ fontSize: "0.65rem" }}>{m.name}</div>
-                <div className="font-rimma sans my-2.5 py-0 mx-0 px-0 rounded-2xl" style={{ fontSize: "0.5rem", color: "#c9a84c" }}>{m.role}</div>
+                <div className="font-rimma sans my-[11px] mx-0 px-0 py-[5px] rounded-xl" style={{ fontSize: "0.5rem", color: "#c9a84c" }}>{m.role}</div>
                 <div className="font-pixel" style={{ fontSize: "0.45rem", color: "#5a4a3a" }}>ВКонтакте →</div>
               </a>
             ))}

@@ -72,6 +72,7 @@ export default {
 			fontFamily: {
 				oswald: ['Oswald', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				minecraft: ['VT323', 'monospace'],
 			},
 			keyframes: {
 				'accordion-down': {

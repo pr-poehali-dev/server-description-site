@@ -48,7 +48,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen font-montserrat" style={{ background: "#0a0c0f", color: "#e8e0d0" }}>
+    <div className="min-h-screen font-minecraft" style={{ background: "#0a0c0f", color: "#e8e0d0", fontSize: "18px" }}>
 
       {/* HEADER */}
       <header
@@ -64,10 +64,10 @@ const Index = () => {
           <a href="#" className="flex items-center gap-3">
             <span className="text-2xl">⚔️</span>
             <div>
-              <div className="font-oswald font-bold text-xs leading-none tracking-widest" style={{ color: "#c9a84c" }}>
+              <div className="font-minecraft text-sm leading-none tracking-widest" style={{ color: "#c9a84c" }}>
                 РЕСПУБЛИКА
               </div>
-              <div className="font-oswald font-bold text-lg leading-none tracking-wider text-white">
+              <div className="font-minecraft text-2xl leading-none tracking-wider text-white">
                 ВЕСТМАРК
               </div>
             </div>
@@ -99,7 +99,7 @@ const Index = () => {
             href={VK_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold font-oswald tracking-wider transition-all duration-200"
+            className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-lg font-bold font-minecraft tracking-wider transition-all duration-200"
             style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
             onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 20px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
@@ -129,7 +129,7 @@ const Index = () => {
               href={VK_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 py-3 px-3 rounded-lg text-sm font-bold font-oswald text-center tracking-wider"
+              className="mt-2 py-3 px-3 rounded-lg text-lg font-bold font-minecraft text-center tracking-wider"
               style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
             >
               ВКонтакте
@@ -154,11 +154,11 @@ const Index = () => {
             ⚔️ MINECRAFT РП-СЕРВЕР
           </div>
 
-          <h1 className="font-oswald font-bold leading-none mb-3 text-white" style={{ fontSize: "clamp(3rem, 10vw, 7rem)", letterSpacing: "0.05em" }}>
+          <h1 className="font-minecraft leading-none mb-3 text-white" style={{ fontSize: "clamp(3rem, 10vw, 7rem)", letterSpacing: "0.05em" }}>
             РЕСПУБЛИКА
           </h1>
           <h1
-            className="font-oswald font-bold leading-none mb-8"
+            className="font-minecraft leading-none mb-8"
             style={{ fontSize: "clamp(3rem, 10vw, 7rem)", letterSpacing: "0.05em", color: "#c9a84c", textShadow: "0 0 40px rgba(201,168,76,0.4)" }}
           >
             ВЕСТМАРК
@@ -171,7 +171,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#about"
-              className="px-8 py-4 rounded-xl font-oswald font-bold tracking-wider text-sm transition-all duration-200"
+              className="px-8 py-4 rounded-xl font-minecraft tracking-wider text-xl transition-all duration-200"
               style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
               onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 30px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
@@ -182,7 +182,7 @@ const Index = () => {
               href={VK_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl font-oswald font-bold tracking-wider text-sm transition-all duration-200"
+              className="px-8 py-4 rounded-xl font-minecraft tracking-wider text-xl transition-all duration-200"
               style={{ background: "transparent", border: "2px solid rgba(201,168,76,0.4)", color: "#c9a84c" }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#c9a84c"; e.currentTarget.style.background = "rgba(201,168,76,0.08)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.4)"; e.currentTarget.style.background = "transparent"; }}
@@ -202,13 +202,13 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ОПИСАНИЕ —</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white">О СЕРВЕРЕ</h2>
+            <h2 className="font-minecraft text-5xl md:text-6xl text-white">О СЕРВЕРЕ</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>
               <div className="text-3xl mb-4">🏰</div>
-              <h3 className="font-oswald text-2xl font-bold text-white mb-4">Кто мы?</h3>
+              <h3 className="font-minecraft text-2xl font-bold text-white mb-4">Кто мы?</h3>
               <p className="leading-relaxed" style={{ color: "#8a7a6a" }}>
                 Наш сервер — это новый проект, в котором находятся элементы РП и выживания. Мы создаём уникальное пространство, где каждый игрок может найти своё место и роль.
               </p>
@@ -216,7 +216,7 @@ const Index = () => {
 
             <div className="rounded-2xl p-8" style={{ background: "rgba(201,168,76,0.05)", border: "1px solid rgba(201,168,76,0.15)" }}>
               <div className="text-3xl mb-4">⚡</div>
-              <h3 className="font-oswald text-2xl font-bold text-white mb-4">Что вас ждёт?</h3>
+              <h3 className="font-minecraft text-2xl font-bold text-white mb-4">Что вас ждёт?</h3>
               <div className="flex flex-col gap-3">
                 {[
                   { icon: "🏢", text: "Воплощение и развитие своей бизнес-империи" },
@@ -250,7 +250,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ЛЮДИ —</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white">НАШ КОЛЛЕКТИВ</h2>
+            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">НАШ КОЛЛЕКТИВ</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Те, кто создают и поддерживают сервер</p>
           </div>
 
@@ -269,7 +269,7 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center text-3xl" style={{ background: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.2)" }}>
                   {m.emoji}
                 </div>
-                <div className="font-oswald font-bold text-white text-xl mb-1">{m.name}</div>
+                <div className="font-minecraft font-bold text-white text-xl mb-1">{m.name}</div>
                 <div className="text-xs mb-2" style={{ color: "#c9a84c" }}>{m.role}</div>
                 <div className="text-xs" style={{ color: "#5a4a3a" }}>ВКонтакте →</div>
               </a>
@@ -287,7 +287,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— ДОНАТ —</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white">МАГАЗИН</h2>
+            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">МАГАЗИН</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Поддержи сервер и получи привилегии</p>
           </div>
 
@@ -301,9 +301,9 @@ const Index = () => {
                 onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)"; e.currentTarget.style.transform = "none"; }}
               >
                 <div className="text-4xl mb-4">{item.emoji}</div>
-                <div className="font-oswald text-xl font-bold text-white mb-2">{item.name}</div>
+                <div className="font-minecraft text-xl font-bold text-white mb-2">{item.name}</div>
                 <div className="text-sm mb-4" style={{ color: "#6a5a4a" }}>{item.desc}</div>
-                <div className="font-oswald text-3xl font-bold" style={{ color: "#c9a84c" }}>{item.price}</div>
+                <div className="font-minecraft text-3xl font-bold" style={{ color: "#c9a84c" }}>{item.price}</div>
               </div>
             ))}
           </div>
@@ -317,7 +317,7 @@ const Index = () => {
               href={VK_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-oswald font-bold tracking-wider text-sm transition-all duration-200"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-minecraft font-bold tracking-wider text-sm transition-all duration-200"
               style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
               onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 20px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
@@ -338,7 +338,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "#c9a84c" }}>— PLAY —</div>
-            <h2 className="font-oswald text-4xl md:text-5xl font-bold text-white">НАШИ СЕРВЕРА</h2>
+            <h2 className="font-minecraft text-4xl md:text-5xl font-bold text-white">НАШИ СЕРВЕРА</h2>
             <p className="mt-3 text-sm" style={{ color: "#5a4a3a" }}>Выбери платформу и присоединяйся</p>
           </div>
 
@@ -348,8 +348,8 @@ const Index = () => {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="text-3xl mb-2">📱</div>
-                  <div className="font-oswald font-bold text-white text-xl leading-tight">Республика Вестмарк</div>
-                  <div className="font-oswald text-sm tracking-wider mt-1" style={{ color: "#c9a84c" }}>MINECRAFT PE</div>
+                  <div className="font-minecraft font-bold text-white text-xl leading-tight">Республика Вестмарк</div>
+                  <div className="font-minecraft text-sm tracking-wider mt-1" style={{ color: "#c9a84c" }}>MINECRAFT PE</div>
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "rgba(74,222,128,0.12)", color: "#4ade80" }}>
                   <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
@@ -361,7 +361,7 @@ const Index = () => {
                 href={VK_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-oswald font-bold tracking-wider text-sm transition-all duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-minecraft font-bold tracking-wider text-sm transition-all duration-200"
                 style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
                 onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 16px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-1px)"; }}
                 onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}
@@ -376,8 +376,8 @@ const Index = () => {
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <div className="text-3xl mb-2">🖥️</div>
-                  <div className="font-oswald font-bold text-white text-xl leading-tight">Республика Вестмарк</div>
-                  <div className="font-oswald text-sm tracking-wider mt-1" style={{ color: "#6a7a8a" }}>MINECRAFT JAVA</div>
+                  <div className="font-minecraft font-bold text-white text-xl leading-tight">Республика Вестмарк</div>
+                  <div className="font-minecraft text-sm tracking-wider mt-1" style={{ color: "#6a7a8a" }}>MINECRAFT JAVA</div>
                 </div>
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "rgba(100,100,120,0.15)", color: "#8090a0" }}>
                   🔧 Разработка
@@ -386,7 +386,7 @@ const Index = () => {
               <p className="text-sm mb-5" style={{ color: "#4a4a5a" }}>Java Edition — скоро откроется для игроков ПК</p>
               <button
                 disabled
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-oswald font-bold tracking-wider text-sm cursor-not-allowed"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-minecraft font-bold tracking-wider text-sm cursor-not-allowed"
                 style={{ background: "rgba(255,255,255,0.05)", color: "#5a5a6a", border: "1px solid rgba(255,255,255,0.06)" }}
               >
                 <Icon name="Clock" size={14} />
@@ -403,8 +403,8 @@ const Index = () => {
           <div className="flex items-center gap-3">
             <span className="text-xl">⚔️</span>
             <div>
-              <div className="font-oswald font-bold text-xs tracking-widest" style={{ color: "#c9a84c" }}>РЕСПУБЛИКА</div>
-              <div className="font-oswald font-bold text-sm text-white tracking-wider">ВЕСТМАРК</div>
+              <div className="font-minecraft font-bold text-xs tracking-widest" style={{ color: "#c9a84c" }}>РЕСПУБЛИКА</div>
+              <div className="font-minecraft font-bold text-sm text-white tracking-wider">ВЕСТМАРК</div>
             </div>
           </div>
 

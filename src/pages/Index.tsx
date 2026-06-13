@@ -205,7 +205,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#about"
-              className="px-8 py-4 rounded-xl font-minecraft tracking-wider text-xl transition-all duration-200"
+              className="px-8 py-4 rounded-xl font-minecraft tracking-wider transition-all duration-200 text-xl"
               style={{ background: "linear-gradient(135deg, #c9a84c, #a07830)", color: "#0a0c0f" }}
               onMouseEnter={(e) => { e.currentTarget.style.boxShadow = "0 0 30px rgba(201,168,76,0.4)"; e.currentTarget.style.transform = "translateY(-2px)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.transform = "none"; }}

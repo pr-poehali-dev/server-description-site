@@ -340,9 +340,7 @@ const Index = () => {
 
           <div className="max-w-2xl mx-auto rounded-2xl p-6 text-center" style={{ background: "rgba(201,168,76,0.06)", border: "1px solid rgba(201,168,76,0.2)" }}>
             <div className="text-2xl mb-3">💬</div>
-            <p className="text-sm mb-5 leading-relaxed" style={{ color: "#8a7a6a" }}>
-              Чтобы оформить заказ — пишите нам в личные сообщения сообщества ВКонтакте
-            </p>
+            <p className="text-sm mb-5 leading-relaxed" style={{ color: "#8a7a6a" }}>Хотите сделать заказ? Напишите нам в личные сообщения ВКонтакте.</p>
             <a
               href={VK_LINK}
               target="_blank"

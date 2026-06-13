@@ -173,7 +173,7 @@ const Index = () => {
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
           <div
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest mb-8"
+            className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest rounded-lg mx-0 px-[17px] py-[7px] my-[17px]"
             style={{
               background: serverStatus?.online ? "rgba(74,222,128,0.1)" : "rgba(201,168,76,0.12)",
               border: serverStatus?.online ? "1px solid rgba(74,222,128,0.3)" : "1px solid rgba(201,168,76,0.3)",

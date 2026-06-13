@@ -397,7 +397,7 @@ const Index = () => {
                   {serverStatus === null ? "..." : serverStatus.online ? "Онлайн" : "Оффлайн"}
                 </div>
               </div>
-              <p className="text-sm mb-3" style={{ color: "#6a5a4a" }}>Bedrock Edition — Играй на телефоне, компьютере или планшете.</p>
+              <p className="mb-3 text-lg" style={{ color: "#6a5a4a" }}>Bedrock Edition — Играй на телефоне, компьютере или планшете.</p>
               {serverStatus?.online && (
                 <div className="flex items-center gap-2 mb-4">
                   <div

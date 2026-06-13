@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Check Minecraft Bedrock server status",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": {"online": true},
+      "bodyMatcher": "partial"
+    }
+  ]
+}

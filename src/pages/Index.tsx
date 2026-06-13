@@ -23,10 +23,35 @@ const SHOP_ITEMS = [
   { name: "Разбан", price: "400₽", emoji: "🔓", desc: "Снятие блокировки аккаунта и возврат на сервер" },
 ];
 
+const MC_STATUS_URL = "https://functions.poehali.dev/7a7a71da-0fe4-4cd5-a1ab-9630137f1527";
+
+interface ServerStatus {
+  online: boolean;
+  players_online: number;
+  players_max: number;
+  version: string;
+}
+
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("about");
+  const [serverStatus, setServerStatus] = useState<ServerStatus | null>(null);
+
+  useEffect(() => {
+    const fetchStatus = async () => {
+      try {
+        const res = await fetch(MC_STATUS_URL);
+        const data = await res.json();
+        setServerStatus(data);
+      } catch {
+        setServerStatus({ online: false, players_online: 0, players_max: 0, version: "" });
+      }
+    };
+    fetchStatus();
+    const interval = setInterval(fetchStatus, 30000);
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -149,9 +174,18 @@ const Index = () => {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-20">
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest mb-8"
-            style={{ background: "rgba(201,168,76,0.12)", border: "1px solid rgba(201,168,76,0.3)", color: "#c9a84c" }}
+            style={{
+              background: serverStatus?.online ? "rgba(74,222,128,0.1)" : "rgba(201,168,76,0.12)",
+              border: serverStatus?.online ? "1px solid rgba(74,222,128,0.3)" : "1px solid rgba(201,168,76,0.3)",
+              color: serverStatus?.online ? "#4ade80" : "#c9a84c",
+            }}
           >
-            ⚔️ MINECRAFT РП-СЕРВЕР
+            <span className="w-2 h-2 rounded-full bg-current animate-pulse" />
+            {serverStatus === null
+              ? "⚔️ MINECRAFT РП-СЕРВЕР"
+              : serverStatus.online
+              ? `ОНЛАЙН • ${serverStatus.players_online} ИГРОКОВ`
+              : "⚔️ СЕРВЕР ОФФЛАЙН"}
           </div>
 
           <h1 className="font-pixel leading-tight mb-4 text-white" style={{ fontSize: "clamp(1.4rem, 5vw, 3.5rem)", letterSpacing: "0.03em" }}>
@@ -351,12 +385,42 @@ const Index = () => {
                   <div className="font-minecraft font-bold text-white text-xl leading-tight">Республика Вестмарк</div>
                   <div className="font-minecraft text-sm tracking-wider mt-1" style={{ color: "#c9a84c" }}>MINECRAFT PE</div>
                 </div>
-                <div className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold" style={{ background: "rgba(74,222,128,0.12)", color: "#4ade80" }}>
-                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-                  Онлайн
+                <div
+                  className="flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold"
+                  style={{
+                    background: serverStatus?.online ? "rgba(74,222,128,0.12)" : "rgba(255,50,50,0.12)",
+                    color: serverStatus?.online ? "#4ade80" : "#ff6464",
+                  }}
+                >
+                  <span
+                    className="w-1.5 h-1.5 rounded-full animate-pulse"
+                    style={{ background: serverStatus?.online ? "#4ade80" : "#ff6464" }}
+                  />
+                  {serverStatus === null ? "..." : serverStatus.online ? "Онлайн" : "Оффлайн"}
                 </div>
               </div>
-              <p className="text-sm mb-5" style={{ color: "#6a5a4a" }}>Bedrock Edition — Играй на телефоне, компьютере или планшете.</p>
+              <p className="text-sm mb-3" style={{ color: "#6a5a4a" }}>Bedrock Edition — Играй на телефоне, компьютере или планшете.</p>
+              {serverStatus?.online && (
+                <div className="flex items-center gap-2 mb-4">
+                  <div
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-lg text-sm"
+                    style={{ background: "rgba(201,168,76,0.08)", border: "1px solid rgba(201,168,76,0.15)" }}
+                  >
+                    <Icon name="Users" size={14} style={{ color: "#c9a84c" }} />
+                    <span className="font-minecraft text-xs" style={{ color: "#c9a84c" }}>
+                      {serverStatus.players_online} / {serverStatus.players_max} игроков
+                    </span>
+                  </div>
+                  {serverStatus.version && (
+                    <div
+                      className="px-3 py-1.5 rounded-lg text-xs"
+                      style={{ background: "rgba(255,255,255,0.03)", color: "#5a4a3a" }}
+                    >
+                      v{serverStatus.version}
+                    </div>
+                  )}
+                </div>
+              )}
               <a
                 href={VK_LINK}
                 target="_blank"

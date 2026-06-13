@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/bf9812fa-8086-4858-a27a-acb51353cfe2/files/0bc4e2cc-bae2-480e-b602-4d64ce02e4d5.jpg";
+const HERO_IMG = "https://cdn.poehali.dev/projects/bf9812fa-8086-4858-a27a-acb51353cfe2/bucket/9465ae2f-5fe0-4b54-816f-bb35c6425581.jpg";
 const VK_LINK = "https://vk.com/respublicavestmark";
 const TIKTOK_LINK = "https://www.tiktok.com/@.4123544?_r=1&_t=ZP-977fqBsf7eR";
 

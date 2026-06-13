@@ -435,7 +435,7 @@ const Index = () => {
           </div>
 
           <div className="text-xs" style={{ color: "#3a3a4a" }}>
-            © 2024 Республика Вестмарк
+            © 2026 Республика Вестмарк
           </div>
         </div>
       </footer>

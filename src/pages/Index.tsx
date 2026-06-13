@@ -214,7 +214,7 @@ const Index = () => {
               href={VK_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl font-minecraft tracking-wider text-xl transition-all duration-200"
+              className="px-8 py-4 rounded-xl font-politburo tracking-wider text-xl transition-all duration-200"
               style={{ background: "transparent", border: "2px solid rgba(201,168,76,0.4)", color: "#c9a84c" }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#c9a84c"; e.currentTarget.style.background = "rgba(201,168,76,0.08)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.4)"; e.currentTarget.style.background = "transparent"; }}

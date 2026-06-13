@@ -445,7 +445,7 @@ const Index = () => {
                   🔧 Разработка
                 </div>
               </div>
-              <p className="text-sm mb-5" style={{ color: "#4a4a5a" }}>Java Edition — скоро откроется для игроков ПК</p>
+              <p className="mb-5 text-lg" style={{ color: "#4a4a5a" }}>Java Edition — скоро откроется для игроков ПК</p>
               <button
                 disabled
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-minecraft font-bold tracking-wider text-sm cursor-not-allowed"

@@ -216,9 +216,7 @@ const Index = () => {
               style={{ background: "transparent", border: "2px solid rgba(201,168,76,0.4)", color: "#c9a84c" }}
               onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#c9a84c"; e.currentTarget.style.background = "rgba(201,168,76,0.08)"; }}
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(201,168,76,0.4)"; e.currentTarget.style.background = "transparent"; }}
-            >
-              ВКонтакте
-            </a>
+            >МЫ НА ПХ</a>
           </div>
         </div>
 
